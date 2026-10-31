@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+
+    <!-- Bootstrap CSS Lokal -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .hero {
+            background: #0d6efd;
+            color: white;
+            padding: 70px 20px;
+        }
+
+        .project-img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portofolio Saya</a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyek">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Beranda -->
+    <section id="beranda" class="hero text-center">
+        <div class="container">
+            <h1>Halo, Saya Axl Helguera</h1>
+            <p>Selamat datang di website portofolio saya.</p>
+            <a href="#proyek" class="btn btn-light">Lihat Proyek</a>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="container py-5 text-center">
+        <h2 class="mb-4">Tentang Saya</h2>
+        <img src="https://placehold.co/250x200?text=Foto+Profil"
+             class="img-fluid rounded mb-3" alt="Foto profil">
+        <p>
+            Saya mahasiswa Teknologi Informasi yang tertarik
+            pada pemrograman web dan pengembangan aplikasi.
+        </p>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek" class="container py-5">
+        <h2 class="text-center mb-4">Proyek Saya</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200?text=Website"
+                         class="card-img-top project-img"
+                         alt="Proyek website">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Portofolio</h5>
+                        <p class="card-text">
+                            Membuat website menggunakan HTML dan Bootstrap.
+                        </p>
+                        <a href="#kontak" class="btn btn-primary">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200?text=Desain+UI"
+                         class="card-img-top project-img"
+                         alt="Proyek desain antarmuka">
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Antarmuka</h5>
+                        <p class="card-text">
+                            Membuat desain aplikasi yang menarik dan mudah digunakan.
+                        </p>
+                        <a href="#kontak" class="btn btn-success">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x200?text=Pemrograman"
+                         class="card-img-top project-img"
+                         alt="Proyek pemrograman">
+                    <div class="card-body">
+                        <h5 class="card-title">Pemrograman</h5>
+                        <p class="card-text">
+                            Belajar membuat program dan aplikasi sederhana.
+                        </p>
+                        <a href="#kontak" class="btn btn-warning">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="container py-5">
+        <h2 class="text-center mb-4">Kontak Saya</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" id="nama"
+                                    class="form-control"
+                                    placeholder="Masukkan nama">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email"
+                                    class="form-control"
+                                    placeholder="Masukkan email">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="pesan" class="form-label">Pesan</label>
+                                <textarea id="pesan" class="form-control"
+                                    rows="3" placeholder="Tulis pesan"></textarea>
+                            </div>
+
+                            <button type="button" class="btn btn-primary">
+                                Kirim
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">Praktikum 5 Pemrograman Fullstack</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript Lokal -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
